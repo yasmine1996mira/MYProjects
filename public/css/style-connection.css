@@ -1,0 +1,280 @@
+
+/* Formulaire de connexion  */
+
+#connection-header /* le header de la page */
+{
+    display:flex;
+    justify-content:center;
+}
+h1#connection-title /* le titre de la page */
+{
+    font-size:400%;
+    margin-top:20px;
+}
+
+#connection-form /* la fenétre du formulaire */
+{
+    width:60%;
+    margin:auto;
+    display:flex;
+    box-shadow: 0px 0px 5px 1px rgba(121, 121, 121, 0.466);
+}
+
+
+#connection-form-img /* la partie gauche du formulaire */
+{
+    display:flex;
+    flex-direction:column;
+    width:40%;
+    height:100%;
+    border-right:1px solid rgba(197, 195, 195, 0.747);
+    border-radius:3px;
+}
+
+h3{
+    align-self:center;
+    padding-top:10px;
+}
+
+#connection-avatar /* L'image */
+{
+    width:60%;
+    align-self:center;
+    height:200px;
+    margin-top:10px;
+    margin-bottom:10px;
+    cursor:zoom-in;
+    transition:0.8s;
+}
+
+#connection-avatar:active
+{
+    transform: scale(1.4);
+}
+
+#btn-facebook 
+{
+    background-color:#4362B2;
+    margin-bottom:10px;
+}
+
+#btn-facebook:hover,#btn-google:hover
+{
+    opacity:0.8;
+}
+
+#btn-facebook:active,#btn-google:active
+{
+    opacity:1;
+}
+
+#btn-google
+{
+    background-color:#EA4434;
+    margin-bottom:20px;
+}
+#connection-form-img .btn /* les deux bouttons facebook et google */
+{
+    width:80%;
+    height:1.2cm;
+    align-self:center;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#connection-form-img i /* les icones dans les bouttons */
+{
+    margin-right:5px;
+    font-size:120%;
+}
+
+#avatar-paragraph
+{
+    text-align:center;
+    line-height:15px;
+}
+
+#connection-form-entry /* La prtie de droite du formulaire de connexion */
+{
+    display:flex;
+    flex-direction:column;
+    width:60%;
+}
+
+h3
+{
+    align-self:center;
+}
+
+#email,#password
+{
+    width:80%;
+    height:1.2cm;
+    text-align:center;
+    font-size:110%;
+    position:relative;
+    margin-left:10%;
+}
+
+
+
+#btn-validation,#btn-inscription 
+{
+    width:80%;
+    height:1.2cm;
+    margin-left:10%;
+    font-size:120%;
+}
+
+.entry-error /* l'alerte */
+{
+    position:relative;
+    width:29%;
+    margin: auto;
+    z-index:1;
+    top:-240px;
+    right:-165px;
+    text-align: center;
+}
+
+#pass-forgot
+{
+    margin-top:5px;
+    text-align:center;
+}
+
+#connection-form hr{
+    width:80%;
+}
+
+/*  l'icone du mot de passe */
+
+.hidepass 
+{
+    position:relative;
+    right:10%;
+    align-self: center;
+    font-size:140%;
+    cursor: pointer; 
+} 
+
+
+@media only screen and (max-width: 868px) { 
+    /* For mobile: */
+    #connection-form
+    {
+        flex-direction:column;
+        width:80%;
+        margin-bottom:20px;
+    }
+    #connection-form-img{width:80%;margin: auto;margin-bottom:0;height:220px;border:none;display:none;}
+    #connection-form-img p{display:none;}
+    #connection-form-img a{visibility:hidden;}
+    #connection-form-entry{width:90%;margin: auto;}
+    #connection-avatar{width:80%;}
+  }
+  
+
+  
+  
+  
+
+
+
+
+/* Inscription */
+
+.modal-body
+{
+    display:flex;
+    flex-direction:column;
+}
+
+
+#form-inscription input
+{
+    width:80%;
+    height:1.2cm;
+    align-self:center;
+    font-size:110%;
+    margin-bottom:16px;
+}
+#form-inscription label
+{
+    margin-left:40px;
+}
+
+#inscription-header
+{
+    margin: auto;
+}
+
+#nameErr
+{
+    line-height:0;
+    margin:0;
+    position:absolute;
+    top:182px;
+    right:80px;
+}
+#prenomErr{
+    line-height:0;
+    margin:0;
+    position:absolute;
+    top:277px;
+    right:80px;
+}
+
+#emailErr{
+    line-height:0;
+    margin:0;
+    position:absolute;
+    top:372px;
+    right:80px;
+}
+
+#passwordErr{
+    line-height:0;
+    margin:0;
+    position:absolute;
+    top:462px;
+    right:80px;
+}
+
+#passwordErr2{
+    line-height:0;
+    margin:0;
+    position:absolute;
+    top:557px;
+    right:80px;
+}
+
+@media only screen and (max-width: 768px) { 
+    /* For mobile: */
+    #form-inscription
+    {
+        margin:auto;
+    }
+  }
+  
+
+  ::-webkit-scrollbar { /* Scrollbar */
+    width:18px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #00000070;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #272727ce;
+  }
